@@ -57,7 +57,7 @@
 				</div>
 				<div class="w-1/6 md:flex gap-3 items-center justify-end hidden">
 					<a href="https://www.facebook.com/FlorencaCaminhoesIveco" target="_blank">
-						<img src="<?php echo get_theme_image(image_name: 'facebook.png') ?>" class="w-10">
+						<img src="<?php echo get_theme_image('facebook.png') ?>" class="w-10">
 					</a>
 					<a href="https://www.instagram.com/florencacaminhoes/" target="_blank">
 						<img src="<?php echo get_theme_image('insta.png') ?>" class="w-10">
@@ -96,7 +96,7 @@
 				</div>
 				<div class="w-full flex gap-3 items-center justify-center pt-10">
 					<a href="https://www.facebook.com/FlorencaCaminhoesIveco" target="_blank">
-						<img src="<?php echo get_theme_image(image_name: 'facebook.png') ?>" class="w-10">
+						<img src="<?php echo get_theme_image( 'facebook.png') ?>" class="w-10">
 					</a>
 					<a href="https://www.instagram.com/florencacaminhoes/" target="_blank">
 						<img src="<?php echo get_theme_image('insta.png') ?>" class="w-10">
