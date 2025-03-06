@@ -65,7 +65,7 @@
 		<div
 			class="w-full flex md:gap-3 gap-5 md:justify-end justify-center md:border-b-0 border-b border-b-white md:pb-0 pb-5">
 			<a href="https://www.facebook.com/FlorencaCaminhoesIveco" target="_blank">
-				<img src="<?php echo get_theme_image(image_name: 'facebook.png') ?>" class="w-10">
+				<img src="<?php echo get_theme_image('facebook.png') ?>" class="w-10">
 			</a>
 			<a href="https://www.instagram.com/florencacaminhoes/" target="_blank">
 				<img src="<?php echo get_theme_image('insta.png') ?>" class="w-10">
