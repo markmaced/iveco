@@ -1,4 +1,4 @@
-<section class="md:h-[30.875rem] h-[335px] w-full bg-cover bg-no-repeat flex md:items-center items-end pb-10 md:pb-0 md:px-0 px-5"
+<section class="md:h-[30.875rem] 3xl:h-[38rem] h-[335px] w-full bg-cover bg-no-repeat flex md:items-center items-end pb-10 md:pb-0 md:px-0 px-5"
     style="background-image: url('<?php echo get_theme_image('hero-servico.jpg') ?>')">
     <div class="max-w-6xl mx-auto w-full">
         <div class="md:w-2/3 w-full">
@@ -20,7 +20,7 @@
                 Com suporte técnico especializado e peças originais, garantimos o resultado que sua frota exige.
             </p>
             <a href="#"
-                class="bg-blue-iveco text-center justify-center text-white py-2 w-80 h-14 md:flex items-center px-5 font-lexend uppercase hidden">
+                class="bg-blue-iveco openModal text-center justify-center text-white py-2 w-80 h-14 md:flex items-center px-5 font-lexend uppercase hidden">
                 Entre em contato
             </a>
         </div>
@@ -29,7 +29,7 @@
         </div>
         <div class="w-full md:hidden flex justify-center">
             <a href="#"
-                class="bg-blue-iveco text-center justify-center text-white py-2 w-80 h-14 flex items-center px-5 font-lexend uppercase">
+                class="bg-blue-iveco openModal text-center justify-center text-white py-2 w-80 h-14 flex items-center px-5 font-lexend uppercase">
                 Entre em contato
             </a>
         </div>

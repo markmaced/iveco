@@ -27,25 +27,25 @@
 				</div>
 				<div class="md:w-4/6 w-1/2 flex justify-end items-center">
 					<ul class="p-0 md:flex gap-5 hidden">
-						<li class="font-lexend text-white uppercase text-base font-medium tracking-5">
+						<li class="font-lexend text-white text-lg before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
 							<a href="/" style="text-decoration: none;">Home</a>
 						</li>
-						<li class="font-lexend text-white uppercase text-base font-medium tracking-5">
+						<li class="font-lexend text-white text-lg before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
 							<a href="/servicos" style="text-decoration: none;">Serviços</a>
 						</li>
-						<li class="font-lexend text-white uppercase text-base font-medium tracking-5">
+						<li class="font-lexend text-white text-lg before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
 							<a href="#veiculos" style="text-decoration: none;">Veículos</a>
 						</li>
-						<li class="font-lexend text-white uppercase text-base font-medium tracking-5">
+						<li class="font-lexend text-white text-lg before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
 							<a href="/consorcio" style="text-decoration: none;">Consórcio</a>
 						</li>
-						<li class="font-lexend text-white uppercase text-base font-medium tracking-5">
+						<li class="font-lexend text-white text-lg before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
 							<a href="/pecas" style="text-decoration: none;">Peças</a>
 						</li>
-						<li class="font-lexend hidden text-white uppercase text-base font-medium tracking-5">
+						<li class="font-lexend hidden text-white text-lg before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
 							<a href="/loja" style="text-decoration: none;">Loja</a>
 						</li>
-						<li class="font-lexend text-white uppercase text-base font-medium tracking-5">
+						<li class="font-lexend text-white text-lg before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
 							<a href="/contato" style="text-decoration: none;">Contato</a>
 						</li>
 					</ul>

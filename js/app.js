@@ -133,7 +133,8 @@ jQuery(document).ready(function ($) {
     $("#model-title, #model-description, #model-link").fadeOut(200, function () {
       $("#model-title").text(title).fadeIn(200);
       $("#model-description").text(description).fadeIn(200);
-      $("#model-link").attr("href", link).fadeIn(200);
+      // $("#model-link").attr("href", link).fadeIn(200);
+      $("#model-link").fadeIn(200);
     });
   }
   $(document).on('click', 'a[href^="#"]', function (event) {
@@ -153,6 +154,166 @@ jQuery(document).ready(function ($) {
   });
   $('.menu-item a').on('click', function (e) {
     $('#mobileMenu').removeClass('right-0').addClass('-right-100');
+  });
+  $(document).on('click', '.openModal', function (e) {
+    e.preventDefault();
+    $("#customModal").fadeIn(300).css("display", "flex");
+    $('#wppLead').css('display', 'none');
+    $("#siteIveco").css("display", "block");
+    $('#formName').val('Site Iveco');
+  });
+  $(document).on('click', '#openWppLead', function () {
+    $("#customModal").fadeIn(300).css("display", "flex");
+    $('#siteIveco').css('display', 'none');
+    $("#wppLead").css("display", "block");
+    $('#formName').val('Whatsapp Lead');
+  });
+  $(document).on('click', '#model-link', function (e) {
+    e.preventDefault();
+    $("#customModal").fadeIn(300).css("display", "flex");
+    $('#wppLead').css('display', 'none');
+    $("#siteIveco").css("display", "block");
+    $('#formName').val('Site Iveco');
+  });
+  $("#closeModal, #customModal").click(function (e) {
+    if (e.target.id === "customModal" || e.target.id === "closeModal") {
+      $("#customModal").fadeOut(300);
+    }
+  });
+  $("#floating_telefone").mask("(00) 00000-0000");
+  $("#wpp_telefone").mask("(00) 00000-0000");
+  $("#floating_cep").mask("00000-000");
+
+  // $(document).on("click", ".registerLead", function (event) {
+  //     event.preventDefault(); // Evita comportamento padrão do botão
+
+  //     // Lista de campos obrigatórios e seus nomes corretos para o backend
+  //     let campos = [
+  //         { id: "floating_name", name: "nome", mensagem: "O campo Nome é obrigatório." },
+  //         { id: "floating_cep", name: "cep", mensagem: "O campo CEP é obrigatório." },
+  //         { id: "floating_email", name: "email", mensagem: "O campo Email é obrigatório." },
+  //         { id: "floating_telefone", name: "telefone", mensagem: "O campo Telefone é obrigatório." },
+  //         { id: "floating_bairro", name: "bairro", mensagem: "O campo Bairro é obrigatório." },
+  //         { id: "floating_cidade", name: "cidade", mensagem: "O campo Cidade é obrigatório." },
+  //         { id: "floating_model", name: "modelo", mensagem: "O campo Modelo é obrigatório." },
+  //         { id: "userMessage", name: "mensagem", mensagem: "" }, // Campo opcional
+  //         { id: "formName", name: "form_name", mensagem: "O campo Hidden é obrigatório." }
+  //     ];
+
+  //     // Verifica se algum campo obrigatório está vazio (exceto userMessage)
+  //     for (let campo of campos) {
+  //         if (campo.id !== "userMessage" && !$(`#${campo.id}`).val().trim()) {
+  //             Swal.close();
+  //             return Swal.fire("Erro!", campo.mensagem, "error");
+  //         }
+  //     }
+
+  //     Swal.fire({
+  //         title: "Aguarde...",
+  //         text: "Estamos processando seu cadastro.",
+  //         allowOutsideClick: false,
+  //         didOpen: () => {
+  //             Swal.showLoading();
+  //         }
+  //     });
+
+  //     // Monta os dados do formulário com os names corretos para o backend
+  //     let formData = campos.reduce((dados, campo) => {
+  //         dados[campo.name] = $(`#${campo.id}`).val().trim();
+  //         return dados;
+  //     }, {});
+
+  //     // Envia os dados via AJAX
+  //     $.ajax({
+  //         url: "https://crm.wave.pro.br/wp-json/crm-wave/v1/create-lead/site-iveco",
+  //         type: "POST",
+  //         contentType: "application/json",
+  //         data: JSON.stringify(formData),
+  //         success: function (response) {
+  //             Swal.close();
+  //             Swal.fire("Sucesso!", response.message || "Cadastro realizado com sucesso!", "success");
+  //             campos.forEach(campo => $(`#${campo.id}`).val(""));
+  //         },
+  //         error: function () {
+  //             Swal.fire("Erro!", "Ocorreu um erro ao enviar os dados. Tente novamente.", "error");
+  //         }
+  //     });
+  // });
+
+  // $(document).on("click", "#registerLeadWpp", function (event) {
+  //     event.preventDefault(); // Evita comportamento padrão do botão
+
+  //     // Lista de campos obrigatórios e seus nomes corretos para o backend
+  //     let campos = [
+  //         { id: "wpp_name", name: "nome", mensagem: "O campo Nome é obrigatório." },
+  //         { id: "wpp_email", name: "email", mensagem: "O campo Email é obrigatório." },
+  //         { id: "wpp_telefone", name: "telefone", mensagem: "O campo Telefone é obrigatório." },
+  //         { id: "formName", name: "form_name", mensagem: "O campo Hidden é obrigatório." }
+  //     ];
+
+  //     // Verifica se algum campo está vazio
+  //     for (let campo of campos) {
+  //         if (!$(`#${campo.id}`).val().trim()) {
+  //             return Swal.fire("Erro!", campo.mensagem, "error");
+  //         }
+  //     }
+
+  //     // Monta os dados do formulário com os names corretos para o backend
+  //     let formData = campos.reduce((dados, campo) => {
+  //         dados[campo.name] = $(`#${campo.id}`).val().trim();
+  //         return dados;
+  //     }, {});
+
+  //     // Exibe o loading antes da requisição
+  //     Swal.fire({
+  //         title: "Aguarde...",
+  //         text: "Estamos processando seu cadastro.",
+  //         allowOutsideClick: false,
+  //         didOpen: () => {
+  //             Swal.showLoading();
+  //         }
+  //     });
+
+  //     // Envia os dados via AJAX
+  //     $.ajax({
+  //         url: "https://crm.wave.pro.br/wp-json/crm-wave/v1/create-lead/site-iveco",
+  //         type: "POST",
+  //         contentType: "application/json",
+  //         data: JSON.stringify(formData),
+  //         success: function (response) {
+  //             Swal.fire({
+  //                 title: "Sucesso!",
+  //                 text: response.message || "Cadastro realizado com sucesso!",
+  //                 icon: "success",
+  //                 confirmButtonText: "OK"
+  //             }).then((result) => {
+  //                 if (result.isConfirmed) {
+  //                     campos.forEach(campo => $(`#${campo.id}`).val(""));
+
+  //                     let linkWpp = `https://wa.me/5541992580720`;
+  //                     window.location.href = linkWpp;
+  //                 }
+  //             });
+  //         },
+  //         error: function () {
+  //             Swal.fire("Erro!", "Ocorreu um erro ao enviar os dados. Tente novamente.", "error");
+  //         }
+  //     });
+  // });
+  $("#floating_cep").on("blur", function () {
+    var cep = $(this).val().replace(/\D/g, "");
+    if (cep.length === 8) {
+      $.getJSON("https://viacep.com.br/ws/".concat(cep, "/json/"), function (data) {
+        if (!("erro" in data)) {
+          $("#floating_city").val(data.localidade);
+          $("#floating_bairro").val(data.bairro);
+        }
+      }).fail(function () {
+        alert("Erro ao buscar o CEP.");
+      });
+    } else {
+      alert("CEP inválido.");
+    }
   });
 });
 

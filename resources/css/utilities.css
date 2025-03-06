@@ -56,3 +56,9 @@
 @utility text-custom-white{
     color: #F2F2F2;
 }
+@utility bg-primary{
+    background-color: #1554FF;
+}
+@utility bg-dark-blue{
+    background-color: #001A3D;
+}

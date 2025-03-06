@@ -1,5 +1,5 @@
 <section
-    class="md:h-[30.875rem] h-[355px] w-full bg-cover bg-no-repeat flex md:items-center items-end pb-10 md:pb-0 px-5 md:px-0"
+    class="md:h-[30.875rem] 3xl:h-[38rem] h-[355px] w-full bg-cover bg-no-repeat flex md:items-center items-end pb-10 md:pb-0 px-5 md:px-0"
     style="background-image: url('<?php echo get_theme_image('hero-pecas.jpg') ?>')">
     <div class="max-w-6xl mx-auto w-full">
         <h1
@@ -73,7 +73,7 @@
             <p class="font-inter text-base font-normal mb-5">Entre em contato com a Florença IVECO e garanta o que há de
                 melhor para sua frota.</p>
             <a href="#"
-                class="bg-blue-iveco text-center justify-center text-white py-2 w-80 h-14 flex items-center px-5 font-lexend uppercase">
+                class="bg-blue-iveco openModal text-center justify-center text-white py-2 w-80 h-14 flex items-center px-5 font-lexend uppercase">
                 Entre em contato
             </a>
         </div>

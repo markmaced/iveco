@@ -1,5 +1,5 @@
 <section
-    class="md:h-[30.875rem] h-[355px] w-full bg-cover bg-no-repeat flex md:items-center items-end pb-10 md:pb-0 px-5 md:px-0"
+    class="md:h-[30.875rem] 3xl:h-[38rem] h-[355px] w-full bg-cover bg-no-repeat flex md:items-center items-end pb-10 md:pb-0 px-5 md:px-0"
     style="background-image: url('<?php echo get_theme_image('hero-consorcio.jpg') ?>')">
     <div class="max-w-6xl mx-auto w-full">
         <h1
@@ -10,7 +10,7 @@
             class="mt-4 text-custom-white font-inter font-normal md:text-lg text-base slider-subtitle transition-all duration-700 ease-in-out mb-5">
             Sem juros, sem complicação. Planeje hoje, conquiste amanhã.</h2>
         <a href="#"
-            class="bg-blue-iveco text-center justify-center text-white py-2 w-64 h-10 flex items-center px-5 font-lexend uppercase">
+            class="bg-blue-iveco openModal text-center justify-center text-white py-2 w-64 h-10 flex items-center px-5 font-lexend uppercase">
             Fale com um consultor
         </a>
     </div>
@@ -24,7 +24,7 @@
             </h2>
         </div>
         <div class="w-full flex md:flex-row flex-col-reverse relative">
-            <div class="md:w-1/2 w-full mb-5 md:mb-0">
+            <div class="md:w-1/2 w-full mb-5 md:mb-0 md:pr-10">
                 <p class="font-inter font-normal text-base text-black md:text-left text-center mb-5">
                     Adquirir o caminhão dos seus sonhos nunca foi tão acessível. Conosco, você tem:
                 </p>
@@ -34,7 +34,7 @@
                             <img src="<?php echo get_theme_image('star.png') ?>">
                         </div>
                         <div class="w-[90%]">
-                            <p class="text-blue-iveco md:text-lg text-sm pl-5 md:pl-0 font-medium leading-[30px]">
+                            <p class="text-blue-iveco md:text-lg text-sm pl-5 md:pl-0 font-medium leading-[30px] font-lexend">
                                 Parcelas que cabem no seu
                                 orçamento.</p>
                         </div>
@@ -44,7 +44,7 @@
                             <img src="<?php echo get_theme_image('star.png') ?>">
                         </div>
                         <div class="w-[90%]">
-                            <p class="text-blue-iveco md:text-lg text-sm pl-5 md:pl-0 font-medium leading-[30px]">
+                            <p class="text-blue-iveco md:text-lg text-sm pl-5 md:pl-0 font-medium leading-[30px] font-lexend">
                                 Contemplação por sorteio
                                 ou lance.</p>
                         </div>
@@ -54,7 +54,7 @@
                             <img src="<?php echo get_theme_image('star.png') ?>">
                         </div>
                         <div class="w-[90%]">
-                            <p class="text-blue-iveco md:text-lg text-sm pl-5 md:pl-0 font-medium leading-[30px]">
+                            <p class="text-blue-iveco md:text-lg text-sm pl-5 md:pl-0 font-medium leading-[30px] font-lexend">
                                 Planejamento sem juros,
                                 com transparência e segurança.</p>
                         </div>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="w-full flex md:hidden justify-center items-center">
                     <a href="#"
-                        class="bg-blue-iveco text-center justify-center text-white py-2 w-80 h-14 items-center px-5 font-lexend uppercase md:hidden flex">
+                        class="bg-blue-iveco openModal text-center justify-center text-white py-2 w-80 h-14 items-center px-5 font-lexend uppercase md:hidden flex">
                         Entre em contato
                     </a>
                 </div>
@@ -72,7 +72,7 @@
             </div>
             <div class="w-full md:hidden flex justify-center">
                 <a href="#"
-                    class="bg-blue-iveco text-center justify-center text-white py-2 w-80 h-14 items-center px-5 font-lexend uppercase hidden md:flex">
+                    class="bg-blue-iveco text-center openModal justify-center text-white py-2 w-80 h-14 items-center px-5 font-lexend uppercase hidden md:flex">
                     Entre em contato
                 </a>
             </div>
@@ -105,7 +105,7 @@
         <p class="text-white font-inter text-xl text-center font-normal mb-12">Entre em contato e saiba como podemos
             transformar seus planos em realidade.</p>
         <a href="#"
-            class="bg-white text-center justify-center text-blue-iveco py-2 w-auto h-14 flex items-center px-5 font-lexend uppercase">
+            class="bg-white openModal text-center justify-center text-blue-iveco py-2 w-auto h-14 flex items-center px-5 font-lexend uppercase">
             Fale com um especialista
         </a>
     </div>
