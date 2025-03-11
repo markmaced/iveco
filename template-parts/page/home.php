@@ -65,25 +65,19 @@
         </div>
     </div>
 </section>
-<section class="md:hidden px-5 w-full py-10">
-    <div class="w-full">
-        <h2 class="text-blue-iveco font-inter text-sm font-semibold leading-[24px]">Aqui na IVECO Florença, você
-            encontra tecnologia, robustez e suporte especializado para manter sua frota sempre à frente.</h2>
-    </div>
-</section>
-<section class="w-full md:py-20 py-5">
+<section class="w-full md:py-20 py-10">
     <div class="max-w-6xl mx-auto flex gap-5 md:px-0 px-5">
         <div class="w-1/3 hidden md:block">
             <img src="<?php echo get_theme_image('solucoes-personalizadas-home.png') ?>" class="w-full">
         </div>
         <div class="md:w-2/3 w-full md:pl-24">
-            <div class="w-3/4 md:mb-8 mb-5">
+            <div class="md:w-3/4 w-full md:mb-8 mb-5">
                 <h2
-                    class="font-medium uppercase tracking-5 font-lexend text-xl md:text-5xl md:leading-[58.75px] leading-[27.5px] md:slider-title transition-all duration-700 ease-in-out text-blue-iveco">
+                    class="font-medium uppercase tracking-5 font-lexend md:text-4xl text-2xl md:text-left text-center md:leading-[42.75px] leading-[27.5px] md:slider-title transition-all duration-700 ease-in-out text-blue-iveco">
                     Onde a excelência é prioridade.
                 </h2>
             </div>
-            <p class="font-inter font-normal text-base text-black md:mb-24 mb-10">Mais do que veículos: soluções
+            <p class="font-inter font-normal text-base text-black md:mb-24 mb-10 md:text-left text-center">Mais do que veículos: soluções
                 personalizadas e
                 atendimento de confiança.</p>
             <div class="md:hidden flex w-full gap-5">
@@ -129,7 +123,7 @@
     </div>
 </section>
 <?php echo do_shortcode('[modelos]') ?>
-<section class="w-full py-16 hidden md:block">
+<section class="w-full md:pb-16 md:pt-4 py-16 md:block">
     <div class="max-w-6xl mx-auto">
         <div class="bg-blue-iveco w-full py-14 md:px-48 px-10 flex gap-5 items-center">
             <div class="swiper-pages">
@@ -142,7 +136,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide divisor-slide">
                         <div class="flex justify-center w-full items-center">
                             <div class="w-0.5 h-8 bg-white relative block"></div>
                         </div>
@@ -155,7 +149,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide divisor-slide">
                         <div class="flex justify-center w-full items-center">
                             <div class="w-0.5 h-8 bg-white relative block"></div>
                         </div>
@@ -168,7 +162,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide divisor-slide">
                         <div class="flex justify-center w-full items-center">
                             <div class="w-0.5 h-8 bg-white relative block"></div>
                         </div>
@@ -181,7 +175,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide divisor-slide">
                         <div class="flex justify-center w-full items-center">
                             <div class="w-0.5 h-8 bg-white relative block"></div>
                         </div>

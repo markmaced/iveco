@@ -1,7 +1,8 @@
 <section
-    class="md:h-[30.875rem] 3xl:h-[38rem] h-[355px] w-full bg-cover bg-no-repeat flex md:items-center items-end pb-10 md:pb-0 px-5 md:px-0"
+    class="md:h-[30.875rem] 3xl:h-[38rem] h-[355px] w-full bg-cover bg-no-repeat flex md:items-center items-end pb-10 md:pb-0 px-5 md:px-0 relative"
     style="background-image: url('<?php echo get_theme_image('hero-pecas.jpg') ?>')">
-    <div class="max-w-6xl mx-auto w-full">
+    <div class="absolute inset-0 overlay-slider z-0"></div>
+    <div class="max-w-6xl mx-auto w-full z-50">
         <h1
             class="font-medium uppercase tracking-5 font-lexend md:text-5xl text-3xl md:leading-[58.75px] slider-title transition-all duration-700 ease-in-out text-white">
             Peças originais IVECO.
@@ -11,11 +12,11 @@
             Se mantenha sempre pronto com peças feitas para durar.</h2>
     </div>
 </section>
-<section class="w-full md:py-16 py-10 px-5 md:px-0">
+<section class="w-full md:pb-10 md:mt-16 py-10 px-5 md:px-0">
     <div class="max-w-6xl mx-auto w-full flex md:flex-row flex-col-reverse">
         <div class="md:w-1/2 w=full">
             <h2
-                class="font-medium uppercase tracking-5 font-lexend text-5xl leading-[58.75px] slider-title transition-all duration-700 ease-in-out text-black md:block mb-10 hidden">
+                class="font-medium uppercase tracking-5 font-lexend md:leading-[42.75px] md:text-4xl slider-title transition-all duration-700 ease-in-out text-blue-iveco md:block mb-10 hidden">
                 Por que escolher nossas peças?
             </h2>
             <ul class="list-disc pl-5">
@@ -33,25 +34,25 @@
         </div>
         <div class="md:w-1/2 w-full mb-10 md:mb-0">
             <h2
-                class="font-medium uppercase tracking-5 font-lexend text-3xl slider-title transition-all duration-700 ease-in-out text-black md:hidden mb-10 block text-center">
+                class="font-medium uppercase tracking-5 font-lexend text-3xl slider-title transition-all duration-700 ease-in-out text-blue-iveco md:hidden mb-10 block text-center">
                 Por que escolher nossas peças?
             </h2>
             <img src="<?php echo get_theme_image('pecas-1.png') ?>">
         </div>
     </div>
 </section>
-<section class="w-full pb-5 px-5 md:px-0">
+<section class="w-full pb-5 md:py-10 px-5 md:px-0">
     <div class="max-w-6xl mx-auto w-full flex md:flex-row flex-col">
         <div class="md:w-1/2 w-full mb-10 md:mb-0">
             <h2
-                class="font-medium uppercase tracking-5 font-lexend text-3xl text-center slider-title transition-all duration-700 ease-in-out text-black mb-5 md:hidden">
+                class="font-medium uppercase tracking-5 font-lexend text-3xl text-center slider-title transition-all duration-700 ease-in-out text-blue-iveco mb-5 md:hidden">
                 Encontre o que você precisa
             </h2>
             <img src="<?php echo get_theme_image('pecas-2.png') ?>">
         </div>
         <div class="md:w-1/2 w-full md:pl-10">
             <h2
-                class="font-medium uppercase tracking-5 font-lexend text-5xl leading-[58.75px] slider-title transition-all duration-700 ease-in-out text-black mb-7 hidden md:block">
+                class="font-medium uppercase tracking-5 font-lexend md:leading-[42.75px] md:text-4xl slider-title transition-all duration-700 ease-in-out text-blue-iveco mb-7 hidden md:block">
                 Encontre o que você precisa
             </h2>
             <h3 class="font-inter font-medium text-3xl text-black mb-2">Peças para todas as linhas IVECO</h3>
@@ -63,11 +64,11 @@
         </div>
     </div>
 </section>
-<section class="w-full md:py-16 py-10 px-5 md:px-0">
+<section class="w-full md:py-10 py-10 px-5 md:px-0">
     <div class="max-w-6xl mx-auto w-full flex md:flex-row flex-col-reverse">
         <div class="md:w-1/2 w-full md:pr-10">
             <h2
-                class="font-medium uppercase tracking-5 font-lexend text-5xl leading-[58.75px] slider-title transition-all duration-700 ease-in-out text-black mb-5 hidden md:block">
+                class="font-medium uppercase tracking-5 font-lexend md:leading-[42.75px] md:text-4xl slider-title transition-all duration-700 ease-in-out text-blue-iveco mb-5 hidden md:block">
                 Segurança em primeiro lugar: escolha materiais originais.
             </h2>
             <p class="font-inter text-base font-normal mb-5">Entre em contato com a Florença IVECO e garanta o que há de
@@ -79,7 +80,7 @@
         </div>
         <div class="md:w-1/2 w-full md:mb-0 mb-10">
             <h2
-                class="font-medium uppercase tracking-5 font-lexend text-3xl slider-title transition-all duration-700 ease-in-out text-black mb-5 text-center md:hidden">
+                class="font-medium uppercase tracking-5 font-lexend text-3xl slider-title transition-all duration-700 ease-in-out text-blue-iveco mb-5 text-center md:hidden">
                 Segurança em primeiro lugar: escolha materiais originais.
             </h2>
             <img src="<?php echo get_theme_image('pecas-3.png') ?>">

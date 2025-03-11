@@ -186,4 +186,7 @@ a {
         top: -57px !important;
         right: -311px !important;
     }
+    .divisor-slide{
+        display: none !important;
+    }
 }

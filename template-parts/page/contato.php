@@ -16,7 +16,7 @@
 </section>
 <section class="px-5 md:px-0 w-full py-16">
     <div class="max-w-6xl mx-auto w-full">
-        <h2 class="text-black font-inter text-sm font-medium leading-[24px] md:text-left text-center">Na Iveco Florença, valorizamos cada cliente
+        <h2 class="text-black font-inter text-base font-medium leading-[24px] md:text-left text-center">Na Iveco Florença, valorizamos cada cliente
             e entendemos que a comunicação ágil faz toda a diferença. Nossa equipe está sempre pronta para oferecer o
             suporte que você precisa, onde quer que esteja.</h2>
     </div>
@@ -95,7 +95,7 @@
         <div class="w-full max-w-6xl mx-auto">
             <div class="flex md:flex-row flex-col w-full">
                 <div class="md:w-1/2 w-full md:pr-5 mb-10">
-                    <h2 class="text-4xl font-normal text-black tracking-5 leading-[100%] uppercase font-lexend md:text-left text-center">Entre em
+                    <h2 class="text-4xl font-normal text-blue-iveco tracking-5 leading-[100%] uppercase font-lexend md:text-left text-center">Entre em
                         contato pelos nossos canais oficiais.</h2>
                 </div>
                 <div class="w-full flex md:flex-row flex-col gap-5 md:pl-10 md:-mb-10 mb-10 z-10">

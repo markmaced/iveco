@@ -105,50 +105,50 @@
 				<div class="bg-white-50 pt-5">
 					<div class="relative z-0 w-full mb-5 group">
 						<input type="text" name="floating_name" id="floating_name"
-							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-ram focus:outline-none focus:ring-0 focus:border-red-ram peer px-5"
+							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
 							placeholder=" " required />
 						<label for="floating_name"
-							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 px-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-ram peer-focus:dark:text-red-ram peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nome
+							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nome
 							completo</label>
 					</div>
 					<div class="relative z-0 w-full mb-5 group">
 						<input type="email" name="floating_email" id="floating_email"
-							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-ram focus:outline-none focus:ring-0 focus:border-red-ram peer px-5"
+							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
 							placeholder=" " required />
 						<label for="floating_email"
-							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 px-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-ram peer-focus:dark:text-red-ram peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
+							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
 					</div>
 					<div class="relative z-0 w-full mb-5 group">
 						<input type="tel" name="floating_telefone" id="floating_telefone"
-							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-ram focus:outline-none focus:ring-0 focus:border-red-ram peer px-5"
+							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
 							placeholder=" " required />
 						<label for="floating_telefone"
-							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 px-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-ram peer-focus:dark:text-red-ram peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Telefone</label>
+							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Telefone</label>
 					</div>
 					<div class="relative z-0 w-full mb-5 group">
 						<input type="text" name="floating_cep" id="floating_cep"
-							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-ram focus:outline-none focus:ring-0 focus:border-red-ram peer px-5"
+							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
 							placeholder=" " required />
 						<label for="floating_cep"
-							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 px-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-ram peer-focus:dark:text-red-ram peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">CEP</label>
+							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">CEP</label>
 					</div>
 					<div class="relative z-0 w-full mb-5 group">
 						<input type="text" name="floating_city" id="floating_city"
-							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-ram focus:outline-none focus:ring-0 focus:border-red-ram peer px-5"
+							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
 							placeholder=" " required />
 						<label for="floating_city"
-							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 px-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-ram peer-focus:dark:text-red-ram peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Cidade</label>
+							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Cidade</label>
 					</div>
 					<div class="relative z-0 w-full mb-5 group">
 						<input type="text" name="floating_bairro" id="floating_bairro"
-							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-ram focus:outline-none focus:ring-0 focus:border-red-ram peer px-5"
+							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
 							placeholder=" " required />
 						<label for="floating_bairro"
-							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 px-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-ram peer-focus:dark:text-red-ram peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Bairro</label>
+							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Bairro</label>
 					</div>
 					<div class="relative z-0 w-full mb-5 group floating_model">
 						<select name="floating_model" id="floating_model"
-							class="block py-2.5 px-5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-ram peer">
+							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer">
 							<option class="text-black" value="" disabled selected hidden>Selecione um modelo</option>
 							<option class="text-black" value="S-Way">S-Way</option>
 							<option class="text-black" value="Daily Hi-matic">Daily Hi-matic</option>
@@ -159,11 +159,11 @@
 							<option class="text-black" value="Iveco Bus">Iveco Bus</option>
 						</select>
 						<label for="floating_model"
-							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 px-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-ram peer-focus:dark:text-red-ram peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Modelo</label>
+							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Modelo</label>
 					</div>
 					<div class="relative z-0 w-full mb-5 group floating_service">
 						<select name="floating_service" id="floating_service"
-							class="block py-2.5 px-5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-ram peer">
+							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer">
 							<option class="text-black" value="" disabled selected hidden>Selecione um serviço</option>
 							<option class="text-black" value="oficina">Oficina</option>
 							<option class="text-black" value="consorcio">Consórcio</option>
@@ -172,7 +172,7 @@
 							<option class="text-black" value="Eco Driver">Eco Driver</option>
 						</select>
 						<label for="floating_service"
-							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 px-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-ram peer-focus:dark:text-red-ram peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Serviço</label>
+							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Serviço</label>
 					</div>
 				</div>
 				<button type="button"
@@ -182,25 +182,25 @@
 				<div class="bg-white-50 pt-5">
 					<div class="relative z-0 w-full mb-5 group">
 						<input type="text" name="wpp_name" id="wpp_name"
-							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-ram focus:outline-none focus:ring-0 focus:border-red-ram peer px-5"
+							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
 							placeholder=" " required />
 						<label for="wpp_name"
-							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 px-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-ram peer-focus:dark:text-red-ram peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nome
+							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nome
 							completo</label>
 					</div>
 					<div class="relative z-0 w-full mb-5 group">
 						<input type="email" name="wpp_email" id="wpp_email"
-							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-ram focus:outline-none focus:ring-0 focus:border-red-ram peer px-5"
+							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
 							placeholder=" " required />
 						<label for="wpp_email"
-							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 px-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-ram peer-focus:dark:text-red-ram peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
+							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
 					</div>
 					<div class="relative z-0 w-full mb-5 group">
 						<input type="tel" name="wpp_telefone" id="wpp_telefone"
-							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-ram focus:outline-none focus:ring-0 focus:border-red-ram peer px-5"
+							class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
 							placeholder=" " required />
 						<label for="wpp_telefone"
-							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 px-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-ram peer-focus:dark:text-red-ram peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Telefone</label>
+							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Telefone</label>
 					</div>
 				</div>
 				<button type="button" id="registerLeadWpp"

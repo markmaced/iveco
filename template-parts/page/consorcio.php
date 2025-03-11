@@ -1,10 +1,11 @@
 <section
-    class="md:h-[30.875rem] 3xl:h-[38rem] h-[355px] w-full bg-cover bg-no-repeat flex md:items-center items-end pb-10 md:pb-0 px-5 md:px-0"
+    class="md:h-[30.875rem] 3xl:h-[38rem] h-[355px] w-full bg-cover bg-no-repeat flex md:items-center items-end pb-10 md:pb-0 px-5 md:px-0 relative"
     style="background-image: url('<?php echo get_theme_image('hero-consorcio.jpg') ?>')">
-    <div class="max-w-6xl mx-auto w-full">
+    <div class="absolute inset-0 overlay-slider z-0"></div>
+    <div class="max-w-6xl mx-auto w-full z-50">
         <h1
-            class="font-medium uppercase tracking-5 font-lexend md:text-5xl md:w-4/5 text-3xl md:leading-[58.75px] slider-title transition-all duration-700 ease-in-out text-white">
-            Consórcio IVECO: O caminho inteligente para o seu próximo caminhão.
+            class="font-medium uppercase tracking-5 font-lexend md:text-5xl md:w-[70%] text-3xl md:leading-[58.75px] slider-title transition-all duration-700 ease-in-out text-white">
+            Consórcio IVECO:<br> O caminho inteligente para o seu próximo caminhão.
         </h1>
         <h2
             class="mt-4 text-custom-white font-inter font-normal md:text-lg text-base slider-subtitle transition-all duration-700 ease-in-out mb-5">
@@ -15,7 +16,7 @@
         </a>
     </div>
 </section>
-<section class="w-full md:py-28 py-10 pb-0">
+<section class="w-full md:pt-24 md:pb-10 py-10 pb-0">
     <div class="max-w-6xl mx-auto w-full">
         <div class="md:w-3/5 w-full">
             <h2
@@ -29,36 +30,20 @@
                     Adquirir o caminhão dos seus sonhos nunca foi tão acessível. Conosco, você tem:
                 </p>
                 <div class="w-full px-5 md:px-0">
-                    <div class="w-full flex items-center mb-5">
-                        <div class="w-[10%]">
-                            <img src="<?php echo get_theme_image('star.png') ?>">
-                        </div>
-                        <div class="w-[90%]">
-                            <p class="text-blue-iveco md:text-lg text-sm pl-5 md:pl-0 font-medium leading-[30px] font-lexend">
-                                Parcelas que cabem no seu
-                                orçamento.</p>
-                        </div>
-                    </div>
-                    <div class="w-full flex items-center mb-5">
-                        <div class="w-[10%]">
-                            <img src="<?php echo get_theme_image('star.png') ?>">
-                        </div>
-                        <div class="w-[90%]">
-                            <p class="text-blue-iveco md:text-lg text-sm pl-5 md:pl-0 font-medium leading-[30px] font-lexend">
-                                Contemplação por sorteio
-                                ou lance.</p>
-                        </div>
-                    </div>
-                    <div class="w-full flex items-center mb-10">
-                        <div class="w-[10%]">
-                            <img src="<?php echo get_theme_image('star.png') ?>">
-                        </div>
-                        <div class="w-[90%]">
-                            <p class="text-blue-iveco md:text-lg text-sm pl-5 md:pl-0 font-medium leading-[30px] font-lexend">
-                                Planejamento sem juros,
-                                com transparência e segurança.</p>
-                        </div>
-                    </div>
+                    <ul class="list-disc flex flex-col gap-y-3 pl-5 md:mb-0 mb-5">
+                        <li
+                            class="text-blue-iveco md:text-lg text-sm pl-5 md:pl-0 font-medium leading-[30px] font-lexend">
+                            Parcelas que cabem no seu
+                            orçamento.</li>
+                        <li
+                            class="text-blue-iveco md:text-lg text-sm pl-5 md:pl-0 font-medium leading-[30px] font-lexend">
+                            Contemplação por sorteio
+                            ou lance.</li>
+                        <li
+                            class="text-blue-iveco md:text-lg text-sm pl-5 md:pl-0 font-medium leading-[30px] font-lexend">
+                            Planejamento sem juros,
+                            com transparência e segurança.</li>
+                    </ul>
                 </div>
                 <div class="w-full flex md:hidden justify-center items-center">
                     <a href="#"
@@ -83,14 +68,14 @@
     <div class="max-w-6xl mx-auto w-full flex md:flex-row flex-col">
         <div class="md:w-1/2 w-full md:mb-0 mb-10">
             <h2
-                class="font-medium uppercase tracking-5 font-lexend text-3xl transition-all duration-700 ease-in-out text-black mb-5 text-center md:hidden">
+                class="font-medium uppercase tracking-5 font-lexend md:leading-[42.75px] md:text-4xl text-3xl transition-all duration-700 ease-in-out text-blue-iveco mb-5 text-center md:hidden">
                 Clientes que já realizaram o sonho de ter um IVECO pela Florença.
             </h2>
             <img src="<?php echo get_theme_image('clientes-consorcio.png') ?>">
         </div>
         <div class="md:w-1/2 w-full md:pr-10 md:pl-14">
             <h2
-                class="font-medium uppercase tracking-5 font-lexend text-4xl leading-[100%] transition-all duration-700 ease-in-out text-black mb-5 hidden md:block">
+                class="font-medium uppercase tracking-5 font-lexend text-4xl leading-[100%] transition-all duration-700 ease-in-out text-blue-iveco mb-5 hidden md:block">
                 Clientes que já realizaram o sonho de ter um IVECO pela Florença.
             </h2>
             <p class="font-inter text-base font-normal mb-5">Escute quem apostou nas nossas soluções.</p>

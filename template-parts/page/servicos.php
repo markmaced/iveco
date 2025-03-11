@@ -1,7 +1,8 @@
-<section class="md:h-[30.875rem] 3xl:h-[38rem] h-[335px] w-full bg-cover bg-no-repeat flex md:items-center items-end pb-10 md:pb-0 md:px-0 px-5"
+<section class="md:h-[30.875rem] 3xl:h-[38rem] h-[335px] w-full bg-cover bg-no-repeat flex md:items-center items-end pb-10 md:pb-0 md:px-0 px-5 relative"
     style="background-image: url('<?php echo get_theme_image('hero-servico.jpg') ?>')">
-    <div class="max-w-6xl mx-auto w-full">
-        <div class="md:w-2/3 w-full">
+    <div class="absolute inset-0 overlay-slider z-0"></div>
+    <div class="max-w-6xl mx-auto w-full z-50">
+        <div class="md:w-[65%] w-full">
             <h1
                 class="font-medium uppercase tracking-5 font-lexend md:text-5xl text-2xl md:leading-[58.75px] transition-all duration-700 ease-in-out text-white">
                 Serviços sob medida para o máximo desempenho do seu IVECO.
@@ -39,7 +40,7 @@
     <div class="max-w-6xl mx-auto">
         <div class="flex flex-col w-full items-center mb-20">
             <h2
-                class="md:text-5xl text-3xl text-blue-iveco tracking-5 text-center uppercase font-medium md:leading-[58.75px] font-lexend">
+                class="md:text-4xl text-3xl text-blue-iveco tracking-5 text-center uppercase font-medium md:leading-[42.75px] font-lexend">
                 O que a IVECO FLORENÇA pode <br>fazer por você:</h2>
         </div>
         <div class="w-full flex flex-col md:flex-row gap-12 md:mb-20 mb-10">
