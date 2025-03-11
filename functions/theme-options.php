@@ -39,3 +39,19 @@ function criar_cpt_modelos() {
   register_post_type('modelos', $args);
 }
 add_action('init', 'criar_cpt_modelos');
+
+function page_detected(){
+  if(is_front_page()){
+    $page = 'home';
+  }else if(is_page('servicos')){
+    $page = 'servicos';
+  }else if(is_page('consorcio')){
+    $page = 'consorcio';
+  }else if(is_page('pecas')){
+    $page = 'pecas';
+  }else{
+    $page = '';
+  }
+
+  return $page;
+}

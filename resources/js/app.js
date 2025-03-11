@@ -119,11 +119,39 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    function updateSlideContent() {
-        $(".swiper-slide").removeClass("opacity-100").addClass("opacity-50");
-        $(".swiper-slide-active").removeClass("opacity-50").addClass("opacity-100"); // Slide centralizado
+    var swiper = new Swiper(".swiper-pages", {
+        slidesPerView: 4,
+        slidesPerGroup: 4, // Move 3 slides por vez
+        loop: true,
+        centeredSlides: false,
+        grabCursor: true,
+        keyboard: {
+            enabled: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 5000,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 4,
+                slidesPerGroup: 4, // Também move 3 por vez no desktop
+            },
+            0: {
+                slidesPerView: 1,
+                slidesPerGroup: 1, // No mobile, move 1 slide por vez
+            }
+        },
+    });    
 
-        var activeSlide = $(".swiper-slide-active"); // Slide do meio
+    function updateSlideContent() {
+        $(".mySwiper .swiper-slide").removeClass("opacity-100").addClass("opacity-50");
+        $(".mySwiper .swiper-slide-active").removeClass("opacity-50").addClass("opacity-100"); // Slide centralizado
+
+        var activeSlide = $(".mySwiper .swiper-slide-active"); // Slide do meio
 
         var title = '';
         var link = '';
@@ -166,6 +194,12 @@ jQuery(document).ready(function ($) {
 
     $(document).on('click', '.openModal', function (e) {
         e.preventDefault()
+        if(wpurl.isPage != 'servicos' && wpurl.isPage != ''){
+            $('#floating_service').val(wpurl.isPage)
+        }
+        $('#hasService').val(true)
+        $('.floating_service').removeClass('hidden')
+        $('.floating_model').addClass('hidden')
         $("#customModal").fadeIn(300).css("display", "flex");
         $('#wppLead').css('display', 'none')
         $("#siteIveco").css("display", "block");
@@ -181,6 +215,9 @@ jQuery(document).ready(function ($) {
 
     $(document).on('click', '#model-link', function (e) {
         e.preventDefault()
+        $('#hasService').val(false)
+        $('.floating_model').removeClass('hidden')
+        $('.floating_service').addClass('hidden')
         $("#customModal").fadeIn(300).css("display", "flex");
         $('#wppLead').css('display', 'none')
         $("#siteIveco").css("display", "block");
@@ -197,61 +234,69 @@ jQuery(document).ready(function ($) {
     $("#wpp_telefone").mask("(00) 00000-0000");
     $("#floating_cep").mask("00000-000");
 
-    // $(document).on("click", ".registerLead", function (event) {
-    //     event.preventDefault(); // Evita comportamento padrão do botão
-
-    //     // Lista de campos obrigatórios e seus nomes corretos para o backend
-    //     let campos = [
-    //         { id: "floating_name", name: "nome", mensagem: "O campo Nome é obrigatório." },
-    //         { id: "floating_cep", name: "cep", mensagem: "O campo CEP é obrigatório." },
-    //         { id: "floating_email", name: "email", mensagem: "O campo Email é obrigatório." },
-    //         { id: "floating_telefone", name: "telefone", mensagem: "O campo Telefone é obrigatório." },
-    //         { id: "floating_bairro", name: "bairro", mensagem: "O campo Bairro é obrigatório." },
-    //         { id: "floating_cidade", name: "cidade", mensagem: "O campo Cidade é obrigatório." },
-    //         { id: "floating_model", name: "modelo", mensagem: "O campo Modelo é obrigatório." },
-    //         { id: "userMessage", name: "mensagem", mensagem: "" }, // Campo opcional
-    //         { id: "formName", name: "form_name", mensagem: "O campo Hidden é obrigatório." }
-    //     ];
-
-    //     // Verifica se algum campo obrigatório está vazio (exceto userMessage)
-    //     for (let campo of campos) {
-    //         if (campo.id !== "userMessage" && !$(`#${campo.id}`).val().trim()) {
-    //             Swal.close();
-    //             return Swal.fire("Erro!", campo.mensagem, "error");
-    //         }
-    //     }
-
-    //     Swal.fire({
-    //         title: "Aguarde...",
-    //         text: "Estamos processando seu cadastro.",
-    //         allowOutsideClick: false,
-    //         didOpen: () => {
-    //             Swal.showLoading();
-    //         }
-    //     });
-
-    //     // Monta os dados do formulário com os names corretos para o backend
-    //     let formData = campos.reduce((dados, campo) => {
-    //         dados[campo.name] = $(`#${campo.id}`).val().trim();
-    //         return dados;
-    //     }, {});
-
-    //     // Envia os dados via AJAX
-    //     $.ajax({
-    //         url: "https://crm.wave.pro.br/wp-json/crm-wave/v1/create-lead/site-iveco",
-    //         type: "POST",
-    //         contentType: "application/json",
-    //         data: JSON.stringify(formData),
-    //         success: function (response) {
-    //             Swal.close();
-    //             Swal.fire("Sucesso!", response.message || "Cadastro realizado com sucesso!", "success");
-    //             campos.forEach(campo => $(`#${campo.id}`).val(""));
-    //         },
-    //         error: function () {
-    //             Swal.fire("Erro!", "Ocorreu um erro ao enviar os dados. Tente novamente.", "error");
-    //         }
-    //     });
-    // });
+    $(document).on("click", ".registerLead", function (event) {
+        event.preventDefault();
+    
+        var hasService = $('#hasService').val() === "true"; // Converte para booleano
+    
+        let campos = [
+            { id: "floating_name", name: "nome", mensagem: "O campo Nome é obrigatório." },
+            { id: "floating_cep", name: "cep", mensagem: "O campo CEP é obrigatório." },
+            { id: "floating_email", name: "email", mensagem: "O campo Email é obrigatório." },
+            { id: "floating_telefone", name: "telefone", mensagem: "O campo Telefone é obrigatório." },
+            { id: "floating_bairro", name: "bairro", mensagem: "O campo Bairro é obrigatório." },
+            { id: "floating_city", name: "cidade", mensagem: "O campo Cidade é obrigatório." },
+            { id: "floating_model", name: "modelo", mensagem: "O campo Modelo é obrigatório.", obrigatorio: !hasService },
+            { id: "floating_service", name: "servico", mensagem: "O campo Serviço é obrigatório.", obrigatorio: hasService },
+            { id: "userMessage", name: "mensagem", mensagem: "" }, // Campo opcional
+            { id: "formName", name: "form_name", mensagem: "O campo Hidden é obrigatório." }
+        ];
+    
+        // Verifica se algum campo obrigatório está vazio
+        for (let campo of campos) {
+            let elemento = document.getElementById(campo.id);
+            if (campo.obrigatorio !== false && campo.id !== "userMessage" && (!elemento || !elemento.value.trim())) {
+                Swal.close();
+                return Swal.fire("Erro!", campo.mensagem, "error");
+            }
+        }
+    
+        Swal.fire({
+            title: "Aguarde...",
+            text: "Estamos processando seu cadastro.",
+            allowOutsideClick: false,
+            didOpen: () => Swal.showLoading()
+        });
+    
+        // Monta os dados do formulário excluindo os campos desnecessários
+        let formData = campos.reduce((dados, campo) => {
+            let elemento = document.getElementById(campo.id);
+            if (campo.obrigatorio !== false && elemento) {
+                dados[campo.name] = elemento.value.trim();
+            }
+            return dados;
+        }, {});
+    
+        // Envia os dados via AJAX
+        // $.ajax({
+        //     url: "https://crm.wave.pro.br/wp-json/crm-wave/v1/create-lead/site-iveco",
+        //     type: "POST",
+        //     contentType: "application/json",
+        //     data: JSON.stringify(formData),
+        //     success: function (response) {
+        //         Swal.close();
+        //         Swal.fire("Sucesso!", response.message || "Cadastro realizado com sucesso!", "success");
+        //         campos.forEach(campo => {
+        //             let elemento = document.getElementById(campo.id);
+        //             if (elemento) elemento.value = "";
+        //         });
+        //     },
+        //     error: function () {
+        //         Swal.fire("Erro!", "Ocorreu um erro ao enviar os dados. Tente novamente.", "error");
+        //     }
+        // });
+    });    
+    
 
     // $(document).on("click", "#registerLeadWpp", function (event) {
     //     event.preventDefault(); // Evita comportamento padrão do botão

@@ -28,6 +28,10 @@
     margin: 0.5rem auto !important;
 }
 
+@utility text-wave{
+    color: #eb0071;
+}
+
 @utility font-lexend {
     font-family: 'Lexend Deca', 'sans-serif';
 }

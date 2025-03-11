@@ -38,32 +38,38 @@
 			<div class="md:w-2/3 w-full mb-10 md:mb-0 md:border-b-0 border-b border-b-white md:pb-0 pb-10">
 				<ul
 					class="p-0 flex md:flex-nowrap flex-wrap md:flex-row md:text-left text-center justify-center gap-5 md:justify-end">
-					<li class="font-lexend uppercase text-base font-medium tracking-5 text-white before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
+					<li
+						class="font-lexend uppercase text-base font-medium tracking-5 text-white before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
 						<a href="/" style="text-decoration: none;">Home</a>
 					</li>
-					<li class="font-lexend uppercase text-base font-medium tracking-5 text-white before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
+					<li
+						class="font-lexend uppercase text-base font-medium tracking-5 text-white before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
 						<a href="/servicos" style="text-decoration: none;">Serviços</a>
 					</li>
-					<li class="font-lexend uppercase text-base font-medium tracking-5 text-white before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
+					<li
+						class="font-lexend uppercase text-base font-medium tracking-5 text-white before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
 						<a href="#veiculos" style="text-decoration: none;">Veículos</a>
 					</li>
-					<li class="font-lexend uppercase text-base font-medium tracking-5 text-white before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
+					<li
+						class="font-lexend uppercase text-base font-medium tracking-5 text-white before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
 						<a href="/consorcio" style="text-decoration: none;">Consórcio</a>
 					</li>
-					<li class="font-lexend uppercase text-base font-medium tracking-5 text-white before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
+					<li
+						class="font-lexend uppercase text-base font-medium tracking-5 text-white before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
 						<a href="/pecas" style="text-decoration: none;">Peças</a>
 					</li>
 					<li class="font-lexend hidden text-white uppercase text-base font-medium tracking-5">
 						<a href="/loja" style="text-decoration: none;">Loja</a>
 					</li>
-					<li class="font-lexend uppercase text-base font-medium tracking-5 text-white before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
+					<li
+						class="font-lexend uppercase text-base font-medium tracking-5 text-white before:transition-all before:duration-500 relative before:w-0 before:h-1 before:bg-white before:content-[''] before:absolute before:-bottom-1 hover:before:w-1/2 before:z-40 after:w-0 after:h-1 after:duration-300 after:transition-all after:absolute after:-bottom-1 after:content-[''] after:bg-primary hover:after:w-full after:left-0 hover:after:duration-1000 z-50">
 						<a href="/contato" style="text-decoration: none;">Contato</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div
-			class="w-full flex md:gap-3 gap-5 md:justify-end justify-center md:border-b-0 border-b border-b-white md:pb-0 pb-5">
+			class="w-full flex md:gap-3 gap-5 md:justify-end justify-center md:border-b-0 border-b border-b-white pb-5">
 			<a href="https://www.facebook.com/FlorencaCaminhoesIveco" target="_blank">
 				<img src="<?php echo get_theme_image('facebook.png') ?>" class="w-10">
 			</a>
@@ -72,9 +78,15 @@
 			</a>
 		</div>
 	</div>
-	<div class="w-full flex md:flex-row flex-col md:text-left text-center justify-center gap-5 pt-10">
-		<p class="text-white font-light text-base font-lexend">© Copyright 2025</p>
-		<p class="text-white font-light text-base font-lexend">IVECO Florença. Uma marca do Grupo Florença.</p>
+	<div class="w-full max-w-6xl mx-auto flex md:flex-row flex-col md:text-left text-center justify-center gap-5 pt-10">
+		<div class="md:w-1/2 w-full flex md:flex-row flex-col md:text-left text-center gap-5">
+			<p class="text-white font-light text-base font-lexend">© Copyright 2025</p>
+			<p class="text-white font-light text-base font-lexend">IVECO Florença. Uma marca do Grupo Florença.</p>
+		</div>
+		<div class="md:w-1/2 w-full flex md:justify-end justify-center">
+			<p class="text-white text-sm font-normal font-inter">Criado por <a href="https://www.wave.pro.br"
+					class="hover:text-wave transition-all duration-300" target="_blank">wave</a></p>
+		</div>
 	</div>
 
 	<button type="button" target="_blank" class="fixed bottom-10 right-10 z-50 cursor-pointer" id="openWppLead">
@@ -82,7 +94,7 @@
 	</button>
 
 	<div id="customModal"
-		class="fixed inset-0 flex items-center justify-center h-screen w-full z-50 black-opacity-0.5 hidden md:px-0 px-5">
+		class="fixed inset-0 flex items-center justify-center modal-background bg-dark-blue/30 backdrop-saturate-150 h-screen w-full z-50 black-opacity-0.5 hidden md:px-0 px-5">
 		<!-- <div class="bg-gradient-to-r from-black to-gray-800 p-6 rounded-lg shadow-lg w-lg relative"> -->
 		<div class="bg-blue-iveco py-6 px-8 shadow-lg w-lg relative">
 			<button id="closeModal"
@@ -134,7 +146,7 @@
 						<label for="floating_bairro"
 							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 px-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-ram peer-focus:dark:text-red-ram peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Bairro</label>
 					</div>
-					<div class="relative z-0 w-full mb-5 group">
+					<div class="relative z-0 w-full mb-5 group floating_model">
 						<select name="floating_model" id="floating_model"
 							class="block py-2.5 px-5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-ram peer">
 							<option class="text-black" value="" disabled selected hidden>Selecione um modelo</option>
@@ -148,6 +160,19 @@
 						</select>
 						<label for="floating_model"
 							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 px-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-ram peer-focus:dark:text-red-ram peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Modelo</label>
+					</div>
+					<div class="relative z-0 w-full mb-5 group floating_service">
+						<select name="floating_service" id="floating_service"
+							class="block py-2.5 px-5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-ram peer">
+							<option class="text-black" value="" disabled selected hidden>Selecione um serviço</option>
+							<option class="text-black" value="oficina">Oficina</option>
+							<option class="text-black" value="consorcio">Consórcio</option>
+							<option class="text-black" value="pecas">Peças</option>
+							<option class="text-black" value="pneus">Pneus</option>
+							<option class="text-black" value="Eco Driver">Eco Driver</option>
+						</select>
+						<label for="floating_service"
+							class="peer-focus:font-medium absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 px-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-ram peer-focus:dark:text-red-ram peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Serviço</label>
 					</div>
 				</div>
 				<button type="button"
@@ -182,6 +207,7 @@
 					class="text-black bg-white focus:ring-4 focus:outline-none w-full font-medium rounded-lg text-base md:w-28 cursor-pointer px-5 py-2.5 text-center dark:bg-white dark:hover:bg-white dark:focus:ring-blue-800">Enviar</button>
 			</form>
 			<input type="hidden" name="form_name" id="formName">
+			<input type="hidden" name="has_service" id="hasService">
 		</div>
 	</div>
 </footer>

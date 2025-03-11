@@ -76,6 +76,7 @@ function tailpress_enqueue_scripts() {
 		'wpurl',
 		array(
 			'ajax' => admin_url('admin-ajax.php'),
+			'isPage' => page_detected(),
 		)
 	);
 }
