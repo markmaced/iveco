@@ -63,10 +63,10 @@ jQuery(document).ready(function ($) {
     var interval = setInterval(function () {
       count += increment;
       if (count >= target) {
-        $counter.text(target.toLocaleString() + '+');
+        $counter.text(target.toLocaleString('pt-BR') + '+');
         clearInterval(interval);
       } else {
-        $counter.text(count.toLocaleString() + '+');
+        $counter.text(count.toLocaleString('pt-BR') + '+');
       }
     }, 25);
   }

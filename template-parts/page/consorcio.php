@@ -20,7 +20,7 @@
     <div class="max-w-6xl mx-auto w-full">
         <div class="md:w-3/5 w-full">
             <h2
-                class="font-medium uppercase tracking-5 font-lexend md:text-4xl text-3xl md:leading-[42.75px] slider-title transition-all duration-700 ease-in-out text-blue-iveco md:mb-10 mb-5 md:text-left text-center">
+                class="font-medium uppercase tracking-5 font-lexend md:text-4xl text-3xl md:leading-[42.75px] slider-title transition-all duration-700 ease-in-out text-blue-iveco mb-5 md:text-left text-center">
                 Por que escolher o Consórcio IVECO Florença?
             </h2>
         </div>
@@ -82,7 +82,7 @@
         </div>
     </div>
 </section>
-<section class="w-full bg-blue-iveco py-20 px-5 md:px-0">
+<section class="w-full bg-blue-iveco py-20 px-5 md:px-0 md:mb-5">
     <div class="max-w-6xl mx-auto flex flex-col items-center justify-center">
         <h2
             class="text-white tracking-5 font-lexend font-normal md:text-5xl text-3xl md:leading-[100%] mb-12 text-center uppercase md:w-4/5">

@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="w-full mt-10">
-                <?php echo do_shortcode('[instagram feed="36"]') ?>
+                <?php echo do_shortcode('[instagram feed="590"]') ?>
             </div>
         </div>
     </section>

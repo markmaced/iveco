@@ -46,7 +46,7 @@
         <div class="w-full flex flex-col md:flex-row gap-12 md:mb-20 mb-10">
             <div class="md:w-1/3 w-full">
                 <h2 class="text-black text-5xl font-lexend font-medium mb-8">01</h2>
-                <p class="text-black font-lexend font-medium text-3xl mb-8">Manutenção preventiva:</p>
+                <p class="text-black font-lexend font-medium text-3xl mb-8 md:w-2/3">Manutenção preventiva:</p>
                 <p class="text-black font-inter text-lg font-normal">Evite imprevistos e mantenha seus veículos sempre
                     em dia com revisões que garantem durabilidade e segurança.</p>
             </div>
@@ -63,7 +63,7 @@
                     legal e máxima performance.</p>
             </div>
         </div>
-        <div class="w-full flex flex-col md:flex-row gap-12 md:mb-20 mb-10">
+        <div class="w-full flex flex-col md:flex-row gap-12">
             <div class="md:w-1/3 w-full md:block flex flex-col items-end">
                 <h2 class="text-black text-5xl font-lexend font-medium mb-8">04</h2>
                 <p class="text-black text-right md:text-left font-lexend font-medium text-3xl mb-8">Serviço de freios e suspensão:</p>
@@ -72,13 +72,13 @@
             </div>
             <div class="md:w-1/3 w-full">
                 <h2 class="text-black text-5xl font-lexend font-medium mb-8">05</h2>
-                <p class="text-black font-lexend font-medium text-3xl mb-8">Troca de óleos e filtros:</p>
+                <p class="text-black font-lexend font-medium text-3xl mb-8 md:w-2/3">Troca de óleos e filtros:</p>
                 <p class="text-black font-inter text-lg font-normal">Prolongue a vida útil do motor e reduza custos
                     operacionais.</p>
             </div>
             <div class="md:w-1/3 w-full md:block flex flex-col items-end">
                 <h2 class="text-black text-5xl font-lexend font-medium mb-8">06</h2>
-                <p class="text-black text-right md:text-left font-lexend font-medium text-3xl mb-8">Reparos especializados:</p>
+                <p class="text-black text-right md:text-left font-lexend font-medium text-3xl mb-8 md:w-2/3">Reparos especializados:</p>
                 <p class="text-black text-right md:text-left font-inter text-lg font-normal">conte com profissionais treinados e certificados
                     para solucionar qualquer problema de maneira eficaz.</p>
             </div>

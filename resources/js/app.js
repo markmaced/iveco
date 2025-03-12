@@ -58,17 +58,17 @@ jQuery(document).ready(function ($) {
         let target = parseInt($counter.attr("data-target"));
         let count = 0;
         let increment = Math.ceil(target / 100);
-
+    
         let interval = setInterval(() => {
             count += increment;
             if (count >= target) {
-                $counter.text(target.toLocaleString() + '+');
+                $counter.text(target.toLocaleString('pt-BR') + '+');
                 clearInterval(interval);
             } else {
-                $counter.text(count.toLocaleString() + '+');
+                $counter.text(count.toLocaleString('pt-BR') + '+');
             }
         }, 25);
-    }
+    }    
 
     function checkVisibility() {
         $(".counter").each(function () {
