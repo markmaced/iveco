@@ -16,7 +16,7 @@
 </section>
 <section class="px-5 md:px-0 w-full py-16">
     <div class="max-w-6xl mx-auto w-full">
-        <h2 class="text-black font-inter md:text-3xl text-base font-medium md:leading-[100%] leading-[24px] text-center">Na Iveco Florença, valorizamos cada cliente
+        <h2 class="text-black font-inter md:text-xl text-base font-medium md:leading-[100%] leading-[24px] text-center">Na IVECO Florença, valorizamos cada cliente
             e entendemos que a comunicação ágil faz toda a diferença. Nossa equipe está sempre pronta para oferecer o
             suporte que você precisa, onde quer que esteja.</h2>
     </div>

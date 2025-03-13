@@ -1812,6 +1812,12 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
+  .md\:text-xl {
+    @media (width >= 782px) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
   .md\:leading-\[42\.75px\] {
     @media (width >= 782px) {
       --tw-leading: 42.75px;
