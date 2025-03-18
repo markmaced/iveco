@@ -43,13 +43,15 @@ add_action('init', 'criar_cpt_modelos');
 function page_detected(){
   if(is_front_page()){
     $page = 'home';
-  }else if(is_page('servicos')){
+  } elseif(is_page('servicos')){
     $page = 'servicos';
-  }else if(is_page('consorcio')){
+  } elseif(is_page('consorcio')){
     $page = 'consorcio';
-  }else if(is_page('pecas')){
+  } elseif(is_page('pecas')){
     $page = 'pecas';
-  }else{
+  } elseif (get_post_type() === 'modelos') {
+    $page = get_post_field('post_name', get_queried_object_id());
+  } else {
     $page = '';
   }
 

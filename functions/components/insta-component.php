@@ -15,8 +15,9 @@
                 </div>
                 <div class="md:w-1/3 w-full flex justify-end items-start">
                     <a href="https://www.instagram.com/florencacaminhoes/"
-                        class="bg-blue-iveco text-center justify-center text-white py-2 w-80 h-14 flex items-center px-5 font-lexend uppercase" target="_blank">
+                        class="bg-blue-iveco text-white py-4 w-80 text-left px-5 tracking-5 font-lexend uppercase flex justify-between items-center" target="_blank">
                         Ir para o instagram
+                        <span><img src="<?php echo get_theme_image('arrow-right.png')?>" class="w-4"></span>
                     </a>
                 </div>
             </div>

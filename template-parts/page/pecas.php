@@ -74,8 +74,9 @@
             <p class="font-inter text-base font-normal mb-5">Entre em contato com a Florença IVECO e garanta o que há de
                 melhor para sua frota.</p>
             <a href="#"
-                class="bg-blue-iveco openModal text-center justify-center text-white py-2 w-80 h-14 flex items-center px-5 font-lexend uppercase">
+                class="bg-blue-iveco text-white py-4 w-80 text-left px-5 tracking-5 font-lexend uppercase md:flex justify-between items-center openModal hidden">
                 Entre em contato
+                <span><img src="<?php echo get_theme_image('arrow-right.png') ?>" class="w-4"></span>
             </a>
         </div>
         <div class="md:w-1/2 w-full md:mb-0 mb-10">

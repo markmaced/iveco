@@ -70,14 +70,14 @@
         <div class="w-1/3 hidden md:block">
             <img src="<?php echo get_theme_image('solucoes-personalizadas-home.png') ?>" class="w-full">
         </div>
-        <div class="md:w-2/3 w-full md:pl-24">
+        <div class="md:w-2/3 w-full md:pl-20">
             <div class="md:w-3/4 w-full md:mb-8 mb-5">
                 <h2
-                    class="font-medium uppercase tracking-5 font-lexend md:text-4xl text-2xl md:text-left text-center md:leading-[42.75px] leading-[27.5px] md:slider-title transition-all duration-700 ease-in-out text-blue-iveco">
+                    class="font-medium uppercase tracking-5 font-lexend md:text-5xl text-2xl md:text-left text-center md:leading-[42.75px] leading-[27.5px] md:slider-title transition-all duration-700 ease-in-out text-blue-iveco">
                     Onde a excelência é prioridade.
                 </h2>
             </div>
-            <p class="font-inter font-normal text-base text-black md:mb-24 mb-10 md:text-left text-center">Mais do que veículos: soluções
+            <p class="font-inter font-normal text-base text-black md:mb-36 mb-10 md:text-left text-center">Mais do que veículos: soluções
                 personalizadas e
                 atendimento de confiança.</p>
             <div class="md:hidden flex w-full gap-5">

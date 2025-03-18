@@ -21,17 +21,19 @@
                 Com suporte técnico especializado e peças originais, garantimos o resultado que sua frota exige.
             </p>
             <a href="#"
-                class="bg-blue-iveco openModal text-center justify-center text-white py-2 w-80 h-14 md:flex items-center px-5 font-lexend uppercase hidden">
+                class="bg-blue-iveco text-white py-4 w-80 text-left px-5 tracking-5 font-lexend uppercase md:flex justify-between items-center openModal hidden">
                 Entre em contato
-            </a>
+                <span><img src="<?php echo get_theme_image('arrow-right.png')?>" class="w-4"></span>
+            </a>        
         </div>
         <div class="md:w-2/3 w-full flex md:justify-end justify-center items-center mb-5">
             <img src="<?php echo get_theme_image('servico-sobre.png ') ?>" class="w-full">
         </div>
         <div class="w-full md:hidden flex justify-center">
             <a href="#"
-                class="bg-blue-iveco openModal text-center justify-center text-white py-2 w-80 h-14 flex items-center px-5 font-lexend uppercase">
+                class="bg-blue-iveco openModal text-center text-white py-2 w-80 h-14 flex justify-between items-center px-5 font-lexend uppercase">
                 Entre em contato
+                <span><img src="<?php echo get_theme_image('arrow-right.png')?>" class="w-4"></span>
             </a>
         </div>
     </div>

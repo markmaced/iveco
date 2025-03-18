@@ -58,7 +58,7 @@ jQuery(document).ready(function ($) {
         let target = parseInt($counter.attr("data-target"));
         let count = 0;
         let increment = Math.ceil(target / 100);
-    
+
         let interval = setInterval(() => {
             count += increment;
             if (count >= target) {
@@ -68,7 +68,7 @@ jQuery(document).ready(function ($) {
                 $counter.text(count.toLocaleString('pt-BR') + '+');
             }
         }, 25);
-    }    
+    }
 
     function checkVisibility() {
         $(".counter").each(function () {
@@ -145,7 +145,7 @@ jQuery(document).ready(function ($) {
                 slidesPerGroup: 1, // No mobile, move 1 slide por vez
             }
         },
-    });    
+    });
 
     function updateSlideContent() {
         $(".mySwiper .swiper-slide").removeClass("opacity-100").addClass("opacity-50");
@@ -167,8 +167,8 @@ jQuery(document).ready(function ($) {
         $("#model-title, #model-description, #model-link").fadeOut(200, function () {
             $("#model-title").text(title).fadeIn(200);
             $("#model-description").text(description).fadeIn(200);
-            // $("#model-link").attr("href", link).fadeIn(200);
-            $("#model-link").fadeIn(200);
+            $("#model-link").attr("href", link).fadeIn(200);
+            // $("#model-link").fadeIn(200);
         });
     }
     $(document).on('click', 'a[href^="#"]', function (event) {
@@ -194,7 +194,7 @@ jQuery(document).ready(function ($) {
 
     $(document).on('click', '.openModal', function (e) {
         e.preventDefault()
-        if(wpurl.isPage != 'servicos' && wpurl.isPage != ''){
+        if (wpurl.isPage != 'servicos' && wpurl.isPage != '') {
             $('#floating_service').val(wpurl.isPage)
         }
         $('#hasService').val(true)
@@ -213,8 +213,11 @@ jQuery(document).ready(function ($) {
         $('#formName').val('Whatsapp Lead');
     });
 
-    $(document).on('click', '#model-link', function (e) {
+    $(document).on('click', '.model-link', function (e) {
         e.preventDefault()
+        var model = selectedModel(wpurl.isPage)
+        console.log(model)
+        $('#floating_model').val(model)
         $('#hasService').val(false)
         $('.floating_model').removeClass('hidden')
         $('.floating_service').addClass('hidden')
@@ -236,9 +239,9 @@ jQuery(document).ready(function ($) {
 
     $(document).on("click", ".registerLead", function (event) {
         event.preventDefault();
-    
+
         var hasService = $('#hasService').val() === "true"; // Converte para booleano
-    
+
         let campos = [
             { id: "floating_name", name: "nome", mensagem: "O campo Nome é obrigatório." },
             { id: "floating_cep", name: "cep", mensagem: "O campo CEP é obrigatório." },
@@ -251,7 +254,7 @@ jQuery(document).ready(function ($) {
             { id: "userMessage", name: "mensagem", mensagem: "" }, // Campo opcional
             { id: "formName", name: "form_name", mensagem: "O campo Hidden é obrigatório." }
         ];
-    
+
         // Verifica se algum campo obrigatório está vazio
         for (let campo of campos) {
             let elemento = document.getElementById(campo.id);
@@ -260,14 +263,14 @@ jQuery(document).ready(function ($) {
                 return Swal.fire("Erro!", campo.mensagem, "error");
             }
         }
-    
+
         Swal.fire({
             title: "Aguarde...",
             text: "Estamos processando seu cadastro.",
             allowOutsideClick: false,
             didOpen: () => Swal.showLoading()
         });
-    
+
         // Monta os dados do formulário excluindo os campos desnecessários
         let formData = campos.reduce((dados, campo) => {
             let elemento = document.getElementById(campo.id);
@@ -276,7 +279,7 @@ jQuery(document).ready(function ($) {
             }
             return dados;
         }, {});
-    
+
         // Envia os dados via AJAX
         // $.ajax({
         //     url: "https://crm.wave.pro.br/wp-json/crm-wave/v1/create-lead/site-iveco",
@@ -295,8 +298,8 @@ jQuery(document).ready(function ($) {
         //         Swal.fire("Erro!", "Ocorreu um erro ao enviar os dados. Tente novamente.", "error");
         //     }
         // });
-    });    
-    
+    });
+
 
     // $(document).on("click", "#registerLeadWpp", function (event) {
     //     event.preventDefault(); // Evita comportamento padrão do botão
@@ -374,4 +377,121 @@ jQuery(document).ready(function ($) {
             alert("CEP inválido.");
         }
     });
+    let $imgs = $('.accordion-img');
+
+    function resetWidths() {
+        if (window.innerWidth <= 768) {
+            // Mobile: 70%, 15%, 15%
+            $imgs.eq(0).css('width', '70%');
+            $imgs.eq(1).css('width', '15%');
+            $imgs.eq(2).css('width', '15%');
+        } else {
+            // Desktop: 80%, 10%, 10% (mantém como antes)
+            $imgs.eq(0).css('width', '80%');
+            $imgs.eq(1).css('width', '10%');
+            $imgs.eq(2).css('width', '10%');
+        }
+    }
+
+    // Executa ao carregar a página
+    resetWidths();
+
+    // Atualiza ao redimensionar a tela
+    $(window).resize(resetWidths);
+
+    // Adiciona efeito ao clique no mobile
+    $imgs.on('click', function () {
+        if (window.innerWidth <= 768) {
+            $imgs.css('width', '15%'); // Reduz todos para 15%
+            $(this).css('width', '70%'); // Expande apenas o clicado
+        } else {
+            $imgs.css('width', '10%');
+            $(this).css('width', '80%');
+            $('.accordion-desc').removeClass('justify-end').addClass('justify-center')
+            $(this).children('.accordion-desc').removeClass('justify-center').addClass('justify-end');
+        }
+    });
+
+    // $imgs.on('mouseenter', function () {
+    //     $imgs.css('width', '10%'); // Reduz tudo para 10%
+    //     $(this).css('width', '80%'); // Aumenta só o hover
+
+    //     $(this).find('.accordion-desc').css('right', '20px'); // Ajusta o texto na ativa
+    // });
+
+    // $('.flex').on('mouseleave', function () {
+    //     resetWidths(); // Retorna ao estado inicial
+    // });
+
+    function initSwipers() {
+        var swiperThumbs = new Swiper(".mySwiperThumb", {
+            spaceBetween: 10,
+            direction: 'vertical', // Padrão: vertical
+            slidesPerView: 3,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 3,
+                    direction: 'horizontal' // No mobile (<= 767px), muda para horizontal
+                },
+                768: {
+                    slidesPerView: 3,
+                    direction: 'vertical' // Em telas maiores, mantém vertical
+                }
+            }
+        });
+
+        var swiperMain = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiperThumbs,
+            },
+        });
+    }
+
+    setTimeout(() => {
+        initSwipers();
+    }, 500);
+
+    function selectedModel(model) {
+        var selected = ''
+        switch (model) {
+            case 's-way':
+                selected = 'S-Way'
+                break;
+            case 'daily-hi-matic':
+                selected = 'Daily Hi-matic'
+                break;
+            case 'daily-chassi':
+                selected = 'Daily Chassi'
+                break;
+            case 'daily-furgao':
+                selected = 'Daily Furgão'
+                break;
+            case 'tector-medio':
+                selected = 'Tector Médio'
+                break;
+            case 'tector-semipesado':
+                selected = 'Tector Semipesado'
+                break;
+            case 'iveco-bus':
+                selected = 'Iveco Bus'
+                break;
+            default:
+                selected = ''
+                break;
+        }
+
+        return selected
+    }
 });  

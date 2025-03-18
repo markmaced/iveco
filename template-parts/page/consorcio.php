@@ -45,10 +45,11 @@
                             com transparência e segurança.</li>
                     </ul>
                 </div>
-                <div class="w-full flex md:hidden justify-center items-center">
+                <div class="w-full flex mt-10">
                     <a href="#"
-                        class="bg-blue-iveco openModal text-center justify-center text-white py-2 w-80 h-14 items-center px-5 font-lexend uppercase md:hidden flex">
+                        class="bg-blue-iveco text-white py-4 w-80 text-left px-5 tracking-5 font-lexend uppercase md:flex justify-between items-center openModal hidden">
                         Entre em contato
+                        <span><img src="<?php echo get_theme_image('arrow-right.png') ?>" class="w-4"></span>
                     </a>
                 </div>
             </div>

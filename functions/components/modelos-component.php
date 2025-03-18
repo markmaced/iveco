@@ -46,7 +46,7 @@
                     <!-- Texto e botão -->
                     <div class="mt-4 flex md:flex-row flex-col w-full items-center">
                         <div class="md:w-1/6 w-full text-center md:text-left">
-                            <h2 id="model-title" class="text-xl font-bold text-blue-iveco tracking-5 uppercase font-lexend">
+                            <h2 id="model-title" class="text-2xl mr-5 font-bold text-blue-iveco tracking-5 uppercase font-lexend">
                                 Tector Semipesado</h2>
                         </div>
                         <div class="md:w-3/6 w-full text-center md:text-left mb-5 md:mb-0">
@@ -54,9 +54,10 @@
                                 perfeito para longas distÂncias</h2>
                         </div>
                         <div class="md:w-2/6 w-full flex justify-end items-start text-center">
-                            <a id="model-link" href="#"
-                                class="bg-blue-iveco text-white py-2 w-80 text-center font-lexend uppercase">
+                            <a href="/modelos/tector-semipesado" id="model-link"
+                                class="bg-blue-iveco text-white py-4 w-80 text-left px-5 tracking-5 font-lexend uppercase flex justify-between items-center">
                                 Faça sua próxima escolha
+                                <span><img src="<?php echo get_theme_image('arrow-right.png')?>" class="w-4 model-link"></span>
                             </a>
                         </div>
                     </div>
