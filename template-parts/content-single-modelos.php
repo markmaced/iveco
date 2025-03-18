@@ -121,7 +121,7 @@
                 <div class="swiper-wrapper">
                     <?php foreach ($galeria as $item): ?>
                         <div class="swiper-slide">
-                            <img src="<?php echo $item['imagem_da_galeria'] ?>" class="object-cover w-full" />
+                            <img src="<?php echo $item[''] ?>" class="object-cover w-full" />
                         </div>
                     <?php endforeach ?>
                 </div>
@@ -134,7 +134,7 @@
                 <div class="swiper-wrapper">
                     <?php foreach ($galeria as $item): ?>
                         <div class="swiper-slide">
-                            <img src="<?php echo $item['imagem_da_galeria'] ?>" class="w-full object-cover" />
+                            <img src="<?php echo $item[''] ?>" class="w-full object-cover" />
                         </div>
                     <?php endforeach ?>
                 </div>
