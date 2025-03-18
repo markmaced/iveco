@@ -113,7 +113,7 @@
 </section>
 <section class="w-full">
     <?php
-    $galeria = get_field('galeria_de_modelo'); ?>
+    $galeria = get_field('galeria_de_modelo' , get_the_ID()); ?>
     <div class="flex md:flex-row flex-col-reverse gap-3">
         <div class="md:w-1/6 w-full relative">
             <div thumbsSlider="" class="mySwiperThumb mb-5">
